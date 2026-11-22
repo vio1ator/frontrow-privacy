@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Frontrow Support</title>
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.62;
+      color: #1d1d1f;
+      background: #f4f6fb;
+      --accent: #2554ff;
+      --accent-soft: rgba(37, 84, 255, 0.10);
+      --card: #ffffff;
+      --muted: #6e6e73;
+      --body: #424245;
+      --border: rgba(0, 0, 0, 0.06);
+    }
+    body { margin: 0; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      padding: 0 4px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      color: inherit;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 10px; }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .nav-links a.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(15, 25, 65, 0.06);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(1.9rem, 5.5vw, 2.9rem); line-height: 1.12; margin: 0 0 10px; letter-spacing: -0.02em; }
+    h2 { margin-top: 2rem; font-size: 1.2rem; letter-spacing: -0.01em; }
+    p, li { color: var(--body); }
+    .subtitle { font-size: 1.08rem; color: var(--muted); margin: 0 0 1.8rem; }
+    .cta {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .faq-item {
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+    }
+    .faq-item:first-of-type { border-top: none; padding-top: 6px; }
+    .faq-q { font-weight: 600; color: inherit; margin: 0 0 6px; font-size: 1.02rem; }
+    .faq-a { margin: 0; }
+    a { color: var(--accent); }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color: #f5f5f7;
+        background: #070b18;
+        --accent: #5c88ff;
+        --accent-soft: rgba(92, 136, 255, 0.16);
+        --card: #12182b;
+        --muted: #9ca3b8;
+        --body: #d4d9e8;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+      article { box-shadow: none; }
+      .cta { color: #070b18; }
+    }
+    @media (max-width: 560px) {
+      main { padding: 24px 14px 48px; }
+      article { padding: 26px 20px; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a class="brand" href="./index.html">Frontrow</a>
+      <div class="nav-links">
+        <a href="./index.html">Privacy</a>
+        <a class="active" href="./support.html">Support</a>
+      </div>
+    </nav>
+
+    <article>
+      <span class="badge">Frontrow for iPhone</span>
+      <h1>Support &amp; FAQ</h1>
+      <p class="subtitle">Every seat is front row. Here are quick answers on recording modes, offline voice isolation, mixing, and exporting.</p>
+
+      <div class="faq-item">
+        <p class="faq-q">How should I position my iPhone for Table vs. Stage mode?</p>
+        <p class="faq-a"><strong>Table mode (default)</strong> uses your iPhone’s omnidirectional bottom microphone—lay your phone flat on the table to capture voices evenly in 360°. <strong>Stage mode</strong> switches to the directional back microphone—hold or prop your iPhone with the rear cameras facing the speaker across the room.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Does Frontrow upload my audio to the cloud?</p>
+        <p class="faq-a">No. Recording, neural voice isolation, mixing, and exporting all happen 100% locally on your iPhone. See our <a href="./index.html">Privacy Policy</a> for full details.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Can I lock my iPhone while Frontrow isolates a recording?</p>
+        <p class="faq-a">Yes. Once you stop recording, voice isolation starts automatically and continues in the background with a Live Activity progress bar on your Lock Screen and Dynamic Island. Keeping Frontrow open in the foreground uses your iPhone’s GPU for maximum speed; locking your phone switches seamlessly to optimized background CPU processing.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do the Room ↔ Front Row slider and Voice Boost work?</p>
+        <p class="faq-a">Frontrow keeps your original 48 kHz recording untouched and separates speech into a phase-locked stem. Slide smoothly between <strong>Room</strong> (0%), <strong>Natural</strong> (50%), and <strong>Front Row</strong> (100%) to keep natural room ambience or isolate pure speech, tap <strong>Mix / Raw</strong> to A/B compare instantly, and toggle <strong>Voice Boost</strong> to lift quiet far-field speakers cleanly without clipping.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Can I clean existing Voice Memos or export lossless files?</p>
+        <p class="faq-a">Yes. Tap the top-right <strong>Import</strong> icon on the Library screen to bring in any audio file from Files or Voice Memos. Inside any session, tap the top-right <strong>Share</strong> icon to export your Current Mix, Isolated Voice, or Original Raw recording as <strong>48 kHz M4A</strong> or <strong>24-bit WAV</strong>.</p>
+      </div>
+
+      <h2>Need help or want to report a bug?</h2>
+      <p>Open an issue with your iPhone model, iOS version, and a short description of what happened—we read every report.</p>
+      <a class="cta" href="https://github.com/vio1ator/frontrow-privacy/issues">Open a Support Issue on GitHub</a>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Frontrow Privacy Policy</title>
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.62;
+      color: #1d1d1f;
+      background: #f4f6fb;
+      --accent: #2554ff;
+      --accent-soft: rgba(37, 84, 255, 0.10);
+      --card: #ffffff;
+      --muted: #6e6e73;
+      --body: #424245;
+      --border: rgba(0, 0, 0, 0.06);
+    }
+    body { margin: 0; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      padding: 0 4px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      color: inherit;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 10px; }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .nav-links a.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(15, 25, 65, 0.06);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(1.9rem, 5.5vw, 2.9rem); line-height: 1.12; margin: 0 0 10px; letter-spacing: -0.02em; }
+    h2 { margin-top: 2rem; font-size: 1.22rem; letter-spacing: -0.01em; }
+    p, li { color: var(--body); }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: 0.45rem; }
+    .summary { font-size: 1.1rem; }
+    .date { color: var(--muted); margin: 0 0 1.75rem; font-size: 0.95rem; }
+    a { color: var(--accent); }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color: #f5f5f7;
+        background: #070b18;
+        --accent: #5c88ff;
+        --accent-soft: rgba(92, 136, 255, 0.16);
+        --card: #12182b;
+        --muted: #9ca3b8;
+        --body: #d4d9e8;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+      article { box-shadow: none; }
+    }
+    @media (max-width: 560px) {
+      main { padding: 24px 14px 48px; }
+      article { padding: 26px 20px; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a class="brand" href="./index.html">Frontrow</a>
+      <div class="nav-links">
+        <a class="active" href="./index.html">Privacy</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </nav>
+
+    <article>
+      <span class="badge">100% On-Device · No Data Collected</span>
+      <h1>Frontrow Privacy Policy</h1>
+      <p class="date">Effective November 22, 2026</p>
+
+      <p class="summary"><strong>Frontrow is designed for private, 100% offline audio recording and voice isolation.</strong> We do not operate user accounts and do not collect, upload, or sell your recordings, imported audio, or personal information.</p>
+
+      <h2>Information processed on your device</h2>
+      <p>To record, isolate speech, mix stems, and export audio, Frontrow processes and stores the following data locally inside the app’s protected iOS container:</p>
+      <ul>
+        <li>Raw 48 kHz lossless audio captured when you record inside the app.</li>
+        <li>Audio files you explicitly choose to import from Files or Voice Memos.</li>
+        <li>Phase-aligned isolated voice stems generated locally on your iPhone by the bundled open-source Inworld Voice Isolator v1 model.</li>
+        <li>Recording titles, waveform peaks, timestamps, microphone preset metadata (Table or Stage), and your non-destructive mix preferences (Room ↔ Front Row blend and Voice Boost).</li>
+      </ul>
+      <p>All neural voice isolation runs strictly on your device’s Apple Silicon hardware. Your audio is never uploaded to the developer or to any external server.</p>
+
+      <h2>Information we collect</h2>
+      <p>We do not collect personal data from Frontrow. The app contains no developer-operated analytics, no advertising SDKs, no cross-app tracking, no third-party crash reporters, and makes no external network requests.</p>
+
+      <h2>Permissions and device access</h2>
+      <ul>
+        <li><strong>Microphone:</strong> Used only when you actively tap Record to capture 48 kHz audio using your iPhone’s built-in microphones.</li>
+        <li><strong>Background Processing &amp; Live Activities:</strong> Used solely to continue on-device voice isolation while your screen is locked and display progress on your Lock Screen and Dynamic Island.</li>
+        <li><strong>Files &amp; Sharing:</strong> Frontrow accesses only audio files you select through the iOS document picker, and exports audio (M4A or 24-bit WAV) only when you explicitly invoke Export and Share.</li>
+      </ul>
+
+      <h2>Retention and deletion</h2>
+      <p>Your recordings remain exclusively on your iPhone until you swipe to delete individual sessions inside Frontrow or uninstall the app. Device backups are controlled by your Apple iOS and iCloud Backup settings.</p>
+
+      <h2>Children’s privacy</h2>
+      <p>Because Frontrow operates entirely offline and does not collect personal data, it does not knowingly collect personal information from children.</p>
+
+      <h2>Open-source technology</h2>
+      <p>Frontrow’s on-device voice isolation uses the open-source Inworld Voice Isolator v1 model by Inworld AI under the Apache License 2.0. Complete license and attribution notices are included inside the app under <em>About Frontrow → Open-Source Licenses</em>.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If Frontrow’s privacy practices ever change, this page will be updated with a new effective date.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy questions or support, visit the <a href="./support.html">Frontrow Support page</a> or open an issue in the <a href="https://github.com/vio1ator/frontrow-privacy/issues">Frontrow privacy and support repository</a>.</p>
+    </article>
+  </main>
+</body>
+</html>
